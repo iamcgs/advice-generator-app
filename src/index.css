@@ -1,13 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+
+/* Card */
+.card-container {
+  max-width: 450px;
+  background: hsl(217, 19%, 24%);
+  padding: 40px 20px 0px;
+  border-radius: 15px;
+}
+
+.card-container .advice-num {
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+}
+
+.card-container h2 {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+.divider-mobile {
+  display: none;
+}
+
+.dice-icon {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  bottom: -25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.dice-icon:hover {
+  box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+/* Footer */
+.attribution {
+  padding: 30px;
+  margin: 40px auto 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(150, 100%, 66%);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card-container {
+    width: 350px;
+  }
+
+  .divider-desktop {
+    display: none;
+  }
+
+  .divider-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-container {
+    min-width: 300px;
+  }
 }
