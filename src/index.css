@@ -34,7 +34,7 @@ body {
   text-transform: uppercase;
 }
 
-.card-container h2 {
+.card-container blockquote {
   color: hsl(193, 38%, 86%);
   font-size: 28px;
 }
