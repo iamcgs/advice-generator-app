@@ -18,10 +18,10 @@ export default function Card() {
   }, []);
 
   return (
-    <div className="card-container">
+    <section className="card-container">
       <div className="advice-num">Advice #{id}</div>
       <div className="advice">
-        <h2>"{advice}"</h2>
+        <blockquote>"{advice}"</blockquote>
       </div>
       <div className="bottom-line">
         <img src={dividerDesktop} className="divider-desktop" alt="Divider" />
@@ -30,6 +30,6 @@ export default function Card() {
       <div className="dice-icon" onClick={handleDice}>
         <img src={dice} alt="Dice Icon" />
       </div>
-    </div>
+    </section>
   );
 }

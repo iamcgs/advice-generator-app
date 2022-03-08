@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by{' '}
       <a
         href="https://www.frontendmentor.io?ref=challenge"
@@ -12,6 +12,6 @@ export default function Footer() {
         Frontend Mentor
       </a>
       . Coded by <a href="https://github.com/iamcgs">Carla</a>.
-    </div>
+    </footer>
   );
 }
